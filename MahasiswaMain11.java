@@ -43,5 +43,9 @@ public class MahasiswaMain11 {
         MahasiswaMain11 mhs2 = new MahasiswaMain11("Annisa Nabila","2141720160", 3.25, "TI 2L");
         mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
+
+        MahasiswaMain11 mhs = new MahasiswaMain11("Marsya Zulfa Zahrani","244107060005", 3.87, "SIB 1G");
+        mhs.tampilkanInformasi();
+
     }
-}
+}S
