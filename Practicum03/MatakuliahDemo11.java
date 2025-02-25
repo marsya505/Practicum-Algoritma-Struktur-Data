@@ -13,11 +13,7 @@ public class MatakuliahDemo11 {
         }
         for (int i=0; i < 3; i++) {
             System.out.println("Data Matakuliah ke-" + (i + 1));
-            System.out.println("Kode        : "+ arrayofMatakuliah11[i].kode);
-            System.out.println("Nama        : "+ arrayofMatakuliah11[i].nama);
-            System.out.println("Sks         : "+ arrayofMatakuliah11[i].sks);
-            System.out.println("Jumlah Jam  : "+ arrayofMatakuliah11[i].jumlahJam);
-            System.out.println("----------------------------");
+            arrayofMatakuliah11[i].cetakInfo();
         }
     }
 }
