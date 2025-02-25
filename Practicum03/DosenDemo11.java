@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class DosenDemo11 {
     public static void main(String[] args) {
         Scanner input11 = new Scanner(System.in);
@@ -22,5 +21,10 @@ public class DosenDemo11 {
         for (Dosen11 dosen : arrayOfDosen) {
             dosen.cetakInfo(nomor++);
         }
+        DataDosen11.dataSemuaDosen(arrayOfDosen);
+        DataDosen11.jumlahDosenPerJenisKelamin(arrayOfDosen);
+        DataDosen11.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+        DataDosen11.infoDosenPalingTua(arrayOfDosen);
+        DataDosen11.infoDosenPalingMuda(arrayOfDosen);
     }
 }
