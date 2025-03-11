@@ -1,17 +1,19 @@
 public class Faktorial11 {
-    int faktorialBF11(int n){
+    int faktorialBF(int n) {
         int fakto = 1;
-        for(int i=1; i<=n; i++){
-            fakto = fakto * i;
-        }
+        int i = 1;
+        do {
+            fakto *= i;
+            i++;
+        } while (i <= n);
         return fakto;
-    }
-    int faktorialDC(int n){
-        if(n==1){
+    }    
+
+    int faktorialDC(int n) {
+        if (n == 1) {
             return 1;
-        }else{
-            int fakto = n * faktorialDC11(n-1);
-            return fakto;
+        } else {
+            return n * faktorialDC(n - 1);
         }
-    }   
+    }
 }
