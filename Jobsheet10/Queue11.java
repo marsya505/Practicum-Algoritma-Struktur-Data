@@ -1,18 +1,15 @@
 public class Queue11 {
-
     int[] data;
     int front;
     int rear;
     int size;
     int max;
-
     public Queue11(int n) {
         max = n;
         data = new int[max];
         size = 0;
         front = rear = -1;
     }
-
     public boolean IsEmpty() {
         if (size == 0) {
             return true;
@@ -20,7 +17,6 @@ public class Queue11 {
             return false;
         }
     }
-
     public boolean IsFull() {
         if (size == max) {
             return true;
@@ -28,7 +24,6 @@ public class Queue11 {
             return false;
         }
     }
-
     public void peek() {
         if (!IsEmpty()) {
             System.out.println("Elemen Terdepan: " + data[front]);
@@ -36,7 +31,6 @@ public class Queue11 {
             System.out.println("Queue masih kosong");
         }
     }
-
     public void print() {
         if (IsEmpty()) {
             System.out.println("Queue masih kosong");
@@ -50,7 +44,6 @@ public class Queue11 {
             System.out.println("Jumlah elemen = " +size);
         }
     }
-
     public void clear() {
         if (!IsEmpty()) {
             front = rear = -1;
@@ -60,10 +53,10 @@ public class Queue11 {
             System.out.println("Queue masih kosong");
         }
     }
-
     public void Enqueue(int dt) {
         if (IsFull()) {
             System.out.println("Queue sudah penuh");
+            System.exit(1);
         } else {
             if (IsEmpty()) {
                 front = rear = 0;
@@ -78,11 +71,11 @@ public class Queue11 {
             size++;
         }
     }
-
     public int Dequeue() {
         int dt = 0;
         if (IsEmpty()) {
             System.out.println("Queue masih kosong");
+            System.exit(1);
         } else {
             dt = data[front];
             size--;
